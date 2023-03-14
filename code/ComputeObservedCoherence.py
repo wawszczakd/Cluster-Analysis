@@ -150,7 +150,7 @@ for line in wc_file:
             key = data[1] + "|" + data[0]
         wordcount[key] = int(data[2])
     else:
-        print "ERROR: wordcount format incorrect. Line =", line
+        print ("ERROR: wordcount format incorrect. Line =", line)
         raise SystemExit
 
 #get the total number of windows

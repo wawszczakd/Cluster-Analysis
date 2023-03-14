@@ -23,7 +23,7 @@ def init():
         words = [w.strip() for w in fil.split()]
         for word in words:
             if word in word_to_file:
-                train[i] += (word  + " ")
+                train[i] += (word + " ")
 
     for i, file in enumerate(train):
         f = open("data/train/train"+str(i)+".txt","w")
